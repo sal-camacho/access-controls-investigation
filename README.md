@@ -1,28 +1,57 @@
-# 🔐 Access Controls Investigation: Payroll Incident Analysis
+# Activity Overview
 
-This project documents a cybersecurity incident involving unauthorized access to payroll systems. It analyzes the root causes, identifies access control failures, and proposes mitigation strategies using the AAA framework (Authentication, Authorization, Accounting). The format mirrors the structured approach used in the `data-handling-practices` repository.
+In this activity, you will assess the access controls used by a business. You’ll analyze their current process, identify issues, and make recommendations to improve their security practices.
+Previously, you learned that access controls are security controls that manage access, authorization, and accountability of information. Authentication controls are used to verify who someone is, whereas authorization controls are used to grant a user permissions and set limits on the things they’re allowed to do. When done well, access controls are the key to decreasing the likelihood of a security risk.
 
----
-| **Category**       | **Details**                                                                                                                                                     |
-|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Notes**          | - Incident occurred on **10/03/23** at **8:29 AM**. <br> - User identified as **Robert Taylor Jr.**, a former legal contractor with **administrator access**. <br> - IP address used: `152.207.255.255`. <br> - Device name was unfamiliar, suggesting use of a **personal computer**. |
-| **Issues**         | - **Access was not revoked** after contract ended in **2019**, violating the **principle of least privilege**. <br> - No audit procedures were in place to detect dormant accounts. <br> - Sensitive resources were stored in a **shared cloud drive** without role-based restrictions. |
-| **Recommendations**| - Implement the **AAA framework**: Authentication, Authorization, and Accounting. <br> - Enable **multi-factor authentication (MFA)**. <br> - Enforce **role-based access controls (RBAC)**. <br> - Set **automated account expiration** (e.g., 30-day limits for contractors). <br> - Conduct **regular audits** to identify dormant or misused accounts. |
+## Scenario
 
+You’re the first cybersecurity professional hired by a growing business.
 
+Recently, a deposit was made from the business to an unknown bank account. The finance manager says they didn’t make a mistake. Fortunately, they were able to stop the payment. The owner has asked you to investigate what happened to prevent any future incidents.
 
-## 📊 Access Control Worksheet Table
+To do this, you’ll need to do some accounting on the incident to better understand what happened. First, you will review the access log of the incident. Next, you will take notes that can help you identify a possible threat actor. Then, you will spot issues with the access controls that were exploited by the user. Finally, you will recommend mitigations that can improve the business' access controls and reduce the likelihood that this incident reoccurs.
 
-| **Section**             | **Details**                                                                                                                                                 |
-|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Incident Summary**    | On October 3, 2023, at 8:29 AM, a login occurred from IP address `152.207.255.255`. The user was Robert Taylor Jr., a former legal contractor with admin access. His contract ended in 2019, yet his account remained active and was used to access payroll systems nearly four years later. The device used had an unfamiliar name, suggesting it may have been a personal computer. |
-| **Authorization Issues**| Robert Taylor Jr. retained elevated privileges long after his contract expired, violating the principle of least privilege. No audit procedures were in place to detect dormant accounts. The business also used a shared cloud drive for sensitive resources, lacking role-based restrictions and proper authorization boundaries. |
-| **Recommendations**     | - Implement the AAA framework: Authentication, Authorization, and Accounting. <br> - Enable multi-factor authentication (MFA). <br> - Enforce role-based access controls (RBAC). <br> - Set automated account expiration (e.g., 30-day limits for contractors). <br> - Conduct regular audits to identify dormant or misused accounts. |
-| **Reflection**          | This investigation demonstrated how poor access control hygiene can expose a business to serious risks. By analyzing event logs, identifying privilege mismanagement, and proposing targeted mitigations, I applied cybersecurity principles to a real-world scenario. The exemplar provided a solid foundation, but my approach added depth through forensic analysis and strategic control recommendations. Together, they form a comprehensive response that strengthens the business’s authentication, authorization, and accounting practices. |
+## What’s Included
+
+- Root cause analysis and control recommendations  
+- Reflection on AAA framework and least privilege enforcement  
+- Table summarizing notes, issues, and recommendations  
 
 ---
 
-## 📁 Repo Structure Suggestion
+## Access Controls Investigation
 
-You can organize this in your repo like so:
+This project documents the cybersecurity assignment: **Improve Authentication, Authorization, and Accounting for a Small Business**. It focuses on internal access control failures and applies the AAA framework to prevent unauthorized access and privilege misuse.
+
+The task involved analyzing a real-world incident involving lingering administrator access, evaluating the root causes, and proposing security control enhancements based on the AAA model and least privilege principles.
+
+
+## My Contributions
+
+- Identified core causes: dormant administrator account and lack of access audits  
+- Applied AAA framework to recommend:  
+  - Multi-factor authentication (MFA)  
+  - Role-based access controls (RBAC)  
+  - Automated account expiration  
+  - Regular access audits  
+
+## Access Control Worksheet Table
+
+This analyzes a real-world incident involving unauthorized payroll access, where the failure to revoke permissions led to a near financial breach. It applies the AAA framework and least privilege principles to propose remediation strategies.
+
+| **Section**       | **Content**                                                                                                                                                     |
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Notes**         | - Incident occurred on **10/03/23** at **8:29 AM**. <br> - User: **Robert Taylor Jr.**, former legal contractor with **administrator access**. <br> - IP address: `152.207.255.255`. <br> - Device name was unfamiliar, suggesting use of a **personal computer**. |
+| **Issues**        | - **Access was not revoked** after contract ended in **2019**, violating the **principle of least privilege**. <br> - No audit procedures were in place to detect dormant accounts. <br> - Sensitive resources were stored in a **shared cloud drive** without role-based restrictions. |
+| **Recommendations** | One technical control that could have prevented this incident is the implementation of the **AAA framework** — Authentication, Authorization, and Accounting. <br><br> Recommended actions: <br> - **Enable multi-factor authentication (MFA)**. <br> - **Enforce role-based access controls (RBAC)**. <br> - **Set automated account expiration** (e.g., 30-day limits for contractors). <br> - **Conduct regular audits** to identify and deactivate dormant or misused accounts. |
+
+## Reflection
+
+This activity reinforced the importance of combining technical controls with procedural oversight. By applying the AAA framework and least privilege principles, I demonstrated the ability to assess access risks, propose structured mitigations, and strengthen internal security posture. These recommendations align with cybersecurity best practices and help reduce the likelihood of future incidents.
+
+---
+
+## Screenshot of Completed Worksheet, Event Log & Employee Directory
+
+This image captures the full response submitted as part of the Google Cybersecurity Certificate access control activity.
 
