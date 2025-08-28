@@ -51,7 +51,7 @@ This activity reinforced the importance of combining technical controls with pro
 
 ---
 
-## Screenshot of Completed Worksheet, Event Log & Employee Directory
+## Screenshot of Completed Access Controls Worksheet, Event Log & Employee Directory
 ![Access Control](images/image/access-control.png)
 > This image captures the full response submitted as part of the Google Cybersecurity Certificate access control activity.
 
